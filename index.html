@@ -117,6 +117,17 @@
                 .then(facts => {
                     displayFacts(facts);
                 });
+            });
+             // Event listener for the random fact button
+        const btn1 = document.getElementById('btn1');
+        btn1.addEventListener('click', function() {
+            fetch('https://api.spacexdata.com/v3/history')
+                .then(response => response.json())
+                .then(facts => {
+                    const randomFact = facts[Math.floor(Math.random() * facts.length)];
+                    displayFacts([randomFact]);
+                });
+        });
 
 
 
