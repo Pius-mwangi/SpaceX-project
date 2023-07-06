@@ -88,7 +88,14 @@
 
             const likeButton = document.createElement('button');
             likeButton.textContent = 'Like';
-            likeButton.className = 'like-button;
+            likeButton.className = 'like-button';
+               // Add event listener to toggle 'liked' class when clicked
+               likeButton.addEventListener('click', function() {
+                likeButton.classList.toggle('liked');
+            });
+            
+
+
 
    
 
