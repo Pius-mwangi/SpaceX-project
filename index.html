@@ -77,6 +77,19 @@
         <button id="submit-button">Submit</button>
         <div id="comments-list"></div>
     </div>
+    <script>
+        // Function to generate a single fact item
+        function generateFactItem(fact) {
+            const listItem = document.createElement('li');
+            listItem.className = 'fact-item';
+
+            const factText = document.createElement('span');
+            factText.textContent = fact.details;
+
+            const likeButton = document.createElement('button');
+            likeButton.textContent = 'Like';
+            likeButton.className = 'like-button;
+
    
 
       
