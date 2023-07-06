@@ -93,7 +93,14 @@
                likeButton.addEventListener('click', function() {
                 likeButton.classList.toggle('liked');
             });
-            
+             // Append elements to the list item
+             listItem.appendChild(factText);
+            listItem.appendChild(likeButton);
+
+            return listItem;
+        }
+
+
 
 
 
