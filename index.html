@@ -123,6 +123,7 @@
     </div>
     <script>
         // Function to generate a single fact item
+        function setUpSpaceXproject(){
         function generateFactItem(fact) {
             const listItem = document.createElement('li');
             listItem.className = 'fact-item';
@@ -210,7 +211,9 @@ const inputElement = document.getElementById('input-element');
 inputElement.addEventListener('change', function(event) {
   // Handle the change event here
   console.log('Input value changed:', event.target.value);
-});
+});}
+// Call the setupSpaceXProject function to set up the project
+setUpSpaceXproject()
 
     </script>
 </body>
