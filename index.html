@@ -110,7 +110,13 @@
             });
         }
 
-
+  // Fetch facts from SpaceX API and display them on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('https://api.spacexdata.com/v3/history')
+                .then(response => response.json())
+                .then(facts => {
+                    displayFacts(facts);
+                });
 
 
 
