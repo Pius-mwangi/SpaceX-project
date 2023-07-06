@@ -99,6 +99,16 @@
 
             return listItem;
         }
+         // Function to display facts on the page
+         function displayFacts(facts) {
+            const resultList = document.getElementById('data');
+            resultList.innerHTML = ''; // Clear previous facts
+
+            facts.forEach(fact => {
+                const factItem = generateFactItem(fact);
+                resultList.appendChild(factItem);
+            });
+        }
 
 
 
