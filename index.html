@@ -204,6 +204,14 @@
                 commentInput.value = ''; // Clear the input field
             }
         });
+
+// Event listener for the change event
+const inputElement = document.getElementById('input-element');
+inputElement.addEventListener('change', function(event) {
+  // Handle the change event here
+  console.log('Input value changed:', event.target.value);
+});
+
     </script>
 </body>
 </html>
