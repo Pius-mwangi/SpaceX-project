@@ -40,10 +40,10 @@ Usage
 The live version of the project can be accessed on GitHub Pages.
 https://pius-mwangi.github.io/SpaceX-project/
 
-8. Author
+## Author
 This project is created by Pius Mwangi.
 
-9. License
+## License
 This project is licensed under the MIT License.
 
 
