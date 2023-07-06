@@ -144,6 +144,26 @@
                 }
             });
         });
+        // Event listener for the comment submit button
+        const submitButton = document.getElementById('submit-button');
+        submitButton.addEventListener('click', function() {
+            const commentInput = document.getElementById('comment-input');
+            const comment = commentInput.value;
+
+            if (comment.trim() !== '') {
+                const commentList = document.getElementById('comments-list');
+                const newComment = document.createElement('div');
+                newComment.className = 'comment';
+                newComment.textContent = comment;
+                commentList.appendChild(newComment);
+
+                commentInput.value = ''; // Clear the input field
+            }
+        });
+    </script>
+</body>
+</html>
+
 
 
 
