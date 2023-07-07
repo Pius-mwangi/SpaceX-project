@@ -45,5 +45,7 @@ This project is created by Pius Mwangi.
 
 ## License
 This project is licensed under the MIT License.
+## COPYRIGHT
+© 2023 Pius Mwangi. All Rights Reserved.
 
 
