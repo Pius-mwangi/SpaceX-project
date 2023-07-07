@@ -189,6 +189,23 @@
                 }
             });
         });
+        // Event listener for the search button using the keyup event
+    searchButton.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            const searchInput = document.getElementById('search-input');
+            const searchTerm = searchInput.value.toLowerCase();
+            const factItems = document.querySelectorAll('.fact-item');
+
+            factItems.forEach(factItem => {
+                const factText = factItem.querySelector('span').textContent.toLowerCase();
+                if (factText.includes(searchTerm)) {
+                    factItem.style.display = 'block';
+                } else {
+                    factItem.style.display = 'none';
+                }
+            });
+        }
+    });
         // Event listener for the comment submit button
         const submitButton = document.getElementById('submit-button');
         submitButton.addEventListener('click', function() {
@@ -212,6 +229,7 @@ inputElement.addEventListener('change', function(event) {
   // Handle the change event here
   console.log('Input value changed:', event.target.value);
 });}
+
 // Call the setupSpaceXProject function to set up the project
 setUpSpaceXproject()
 
